@@ -1,0 +1,99 @@
+index.php?cmd=Home
+
+index.php?cmd=News
+
+index.php?cmd=FanZone
+
+index.php?cmd=Standings
+
+index.php?cmd=Results
+
+index.php?cmd=Fixtures
+
+index.php?cmd=History
+
+index.php?cmd=Squad
+
+index.php?cmd=Campnou
+
+
+CREATE TABLE Products(
+    ProductID int NOT NULL AUTO_INCREMENT
+    ProductName varchar(200) NOT NULL,
+    Description varchar(200) NOT NULL,
+    Price float(4,2) NOT NULL,
+    Quantity int NOT NULL,
+    Image LONGBLOB NOT NULL,
+    PRIMARY KEY (ProductID)
+)CHARACTER SET utf8;
+
+CREATE TABLE Orders(
+    ID int NOT NULL AUTO_INCREMENT,
+    name varchar(200) NOT NULL,
+    email varchar(200) NOT NULL,
+    phone int NOT NULL,
+    address varchar(200) NOT NULL,
+    total float(5,2) NOT NULL,
+    PRIMARY KEY (ID)
+)CHARACTER SET utf8;
+
+CREATE TABLE ProdustDetails(
+	ID int NOT NULL AUTO_INCREMENT,
+	ProductID int NOT NULL,
+	Image LONGBLOB NOT NULL,
+	PRIMARY KEY (ID),
+	FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+)CHARACTER SET utf8;
+
+CREATE TABLE Reviews(
+  ID int NOT NULL AUTO_INCREMENT,
+  ProductID int NOT NULL,
+  Name varchar(100) NOT NULL,
+  Review varchar(250) NOT NULL,
+  PRIMARY KEY (ID),
+  FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
+)CHARACTER SET utf8;
+
+CREATE TABLE Users(
+username varchar(100) NOT NULL,
+password varchar(100) NOT NULL,
+email varchar(100) NOT NULL,
+PRIMARY KEY(username)
+)CHARACTER SET utf8;
+
+// INSERT DATA INTO TABLE PRODUCTS
+
+insert into Products(ProductID, ProductName, Description, Price, Quantity, Image) values(1, '3D Camera', 'Camera for hd videos and photos',
+ 20.50, 5, 'product-images/camera.jpg');
+insert into Products(ProductID, ProductName, Description, Price, Quantity, Image) values(2, 'Hard drive', 'External hard drive',
+ 25.00, 10, 'product-images/external-hard-drive.jpg');
+insert into Products(ProductID, ProductName, Description, Price, Quantity, Image) values(3, 'Watch', 'Wrist watch',
+ 55.00, 10, 'product-images/watch.jpg');
+
+// INSERT DATA INTO TABLE ORDERS
+
+insert into Orders(ID, ProductID, ProductName, Price, Quantity, username) values(1, 1, '3D camera', 20.50, 1, 'mshi_93');
+insert into Orders(ID, ProductID, ProductName, Price, Quantity, username) values(2, 3, 'Watch', 55.00, 2, 'mshi_93');
+
+// Insert data into table ProductDetails
+
+insert into ProductDetails(ID, ProductID, Image) values(1, 1, 'product-images/camera.jpg');
+insert into ProductDetails(ID, ProductID, Image) values(2, 1, 'product-images/external-hard-drive.jpg');
+insert into ProductDetails(ID, ProductID, Image) values(3, 1, 'product-images/watch.jpg');
+
+// INSERT DATA INTO TABLE REVIEWS
+
+insert into Reviews(ID, ProductID, Name, Review)values(1, 1, 'Ivan Vankov', 'this is very good stuff');
+insert into Reviews(ID, ProductID, Name, Review)values(2, 2, 'Misho Shopov', 'I like it very much');
+
+
+insert into Reviews(id_review, id, code ,Name, Review)values(1, 8, 'Poster08' ,'Ivan Vankov', 'this is very good stuff');
+insert into Reviews(id_review, id, code, Name, Review)values(2, 8, 'Poster08', 'Misho Shopov', 'I like it very much');
+
+
+// INSERT DATA INTO TABLE USERS
+
+insert into Users(username, password, email) values('mashi_93', '12345', 'mshi_93@abv.bg');
+insert into Users(username, password, email) values('swtlw', '54321', 'swtlw@abv.bg');
+
+

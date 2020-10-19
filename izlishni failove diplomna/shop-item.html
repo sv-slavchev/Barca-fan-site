@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Bootstrap Site</title>
+	<!-- dropdown button from w3s -->
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Site CSS -->
+	<link href="mystyle.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<header id="header" class="col-xs-12 col-sm-12">
+			<div class="col-xs-12 col-sm-12 col-lg-6">
+				<h1>Футболен клуб Барселона</h1>
+				The Cataluña
+			</div>
+			<div class="hidden-xs hidden-sm hidden-md col-lg-6">
+				<a href="#" id="headerLogonew" class="headerLogonew">
+					<img src="./img/mesqueunclub.png">
+				</a>
+			</div>
+			<div id="nav_bar" class="col-xs-12">
+				<!-- nav with search2 -->
+				<!-- <nav class="navbar navbar-default">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button> 
+							<a class="navbar-brand" href="home.html"><span class="glyphicon glyphicon-home"></span>&nbsp;FCB</a>
+							<a href="home.html" id="headerLogonew" class="headerLogonew">
+								<img src="C:/xampp/htdocs/BarcaTrain/img/barcelona.png" width="50" height="50">
+							</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li><a href="#">Новини</a></li>
+								<li><a href="shop.html">Фен зона</a></li>
+								<li class="w3-dropdown-hover">
+									<a href="#">Ла лига</a>
+									<div class="w3-dropdown-content w3-white w3-card-4">
+										<a href="standings.html">Класиране</a>
+										<a href="results.html">Резултати</a>
+										<a href="fixtures.html">Програма</a>
+									</div>
+								</li>
+								<li class="w3-dropdown-hover">
+									<a href="#">ФК Барселона</a>
+									<div class="w3-dropdown-content w3-white w3-card-4">
+										<a href="history.html">История</a>
+										<a href="squad.html">Състав</a>
+										<a href="campnou.html">Камп Ноу</a>
+									</div>
+								</li>
+							</ul>
+				
+							<ul class="nav navbar-nav navbar-right">
+								<form class="navbar-form navbar-left">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Search">
+									</div>
+									<button type="submit" class="btn btn-default">
+										<span class="glyphicon glyphicon-search"></span>
+									</button>
+								</form>
+				
+								search#2
+								<div class="search-form navbar-left">
+									<form action="" class="search-form">
+									    <div class="form-group has-feedback">
+											<label for="search" class="sr-only">Search</label>
+											<input type="text" class="form-control" name="search" id="search" placeholder="search">
+									  		<span class="glyphicon glyphicon-search form-control-feedback"></span>
+										</div>
+									</form>
+								</div>
+
+								<li><a href="" data-toggle="modal" data-target="#myModalReg"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+								<li><a href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav> -->
+
+				<!-- nav with search3 http://bootsnipp.com/snippets/featured/even-simpler-navbar-search -->
+			    <!-- <nav class="navbar navbar-default" role="navigation">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a href="home.html" id="headerLogonew" class="headerLogonew">
+								<img src="C:/xampp/htdocs/BarcaTrain/img/barcelona.png" width="50" height="50">
+							</a>
+						</div>
+
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav">
+
+								<li><a href="#">Новини</a></li>
+								<li><a href="shop.html">Фен зона</a></li>
+								<li class="w3-dropdown-hover">
+									<a href="#" class="dropdown-toggle" data-toggle="w3-dropdown-hover">Ла лига</a>
+									<ul class="w3-dropdown-content w3-white w3-card-4">
+										<li><a href="standings.html">Класиране</a></li>
+										<li><a href="results.html">Резултати</a></li>
+										<li><a href="fixtures.html">Програма</a></li>
+									</ul>
+								</li>
+								<li class="w3-dropdown-hover">
+									<a href="#" class="dropdown-toggle" data-toggle="w3-dropdown-hover">ФК Барселона</a>
+									<ul class="w3-dropdown-content w3-white w3-card-4">
+										<li><a href="history.html">История</a></li>
+										<li><a href="squad.html">Състав</a></li>
+										<li><a href="campnou.html">Камп Ноу</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="" data-toggle="modal" data-target="#myModalReg"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+								<li><a href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+								search#3
+								<form class="navbar-form navbar-search-form" role="search">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search...">
+										<span class="input-group-btn">
+											<button type="submit" class="btn btn-default">
+												<span class="glyphicon glyphicon-search">
+													<span class="sr-only">Search...</span>
+												</span>
+											</button>
+										</span>
+									</div>
+								</form>
+							</ul>
+						</div>
+					</div>
+				</nav> -->
+
+				<!-- navbar with search4  http://bootsnipp.com/snippets/a6aV0 -->
+				<nav class="[ navbar ][ navbar-bootsnipp animate ]" role="navigation">
+					<div class="[ container-fluid ]">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="[ navbar-header ]">
+							<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#myNavbar">
+								<span class="[ sr-only ]">Toggle navigation</span>
+								<span class="[ icon-bar ]"></span>
+								<span class="[ icon-bar ]"></span>
+								<span class="[ icon-bar ]"></span>
+							</button>
+							<div class="[ animbrand ]">
+								<a href="index.php?cmd=Home" id="headerLogonew" class="headerLogonew">
+									<img src="./img/barcelona.png" width="50" height="50">
+								</a>
+							</div>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="[ collapse navbar-collapse ]" id="myNavbar">
+							<ul class="nav navbar-nav">
+								<li class="[ visible-xs ]">
+									<form action="http://bootsnipp.com/search" method="GET" role="search">
+										<div class="[ input-group ]">
+											<input type="text" class="[ form-control ]" name="q" placeholder="Search for snippets">
+											<span class="[ input-group-btn ]">
+												<button class="[ btn btn-primary ]" type="submit"><span class="[ glyphicon glyphicon-search ]"></span></button>
+												<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
+											</span>
+										</div>
+									</form>
+								</li>
+								<li><a href="index.php?cmd=News">Новини</a></li>
+								<li><a href="index.php?cmd=FanZone">Фен зона</a></li>
+								<li class="[ w3-dropdown-hover ]">
+									<a href="#" class="[ dropdown-toggle ]" data-toggle="w3-dropdown-hover">Ла Лига</a>
+									<ul class="[ w3-dropdown-content w3-white w3-card-4 ]">
+										<li><a href="index.php?cmd=Standings">Класиране</a></li>
+										<li><a href="index.php?cmd=Results">Резултати</a></li>
+										<li><a href="index.php?cmd=Fixtures">Програма</a></li>
+									</ul>
+								</li>
+								<li class="[ w3-dropdown-hover ]">
+									<a href="#" class="[ dropdown-toggle ][ animate ]" data-toggle="w3-dropdown-hover">ФК Барселона</a>
+									<ul class="[ w3-dropdown-content w3-white w3-card-4 ]">
+										<li><a href="index.php?cmd=History">История</a></li>
+										<li><a href="index.php?cmd=Squad">Състав</a></li>
+										<li><a href="index.php?cmd=Campnou">Камп Ноу</a></li>
+									</ul>
+								</li>
+							</ul>		
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="" class="animate" data-toggle="modal" data-target="#myModalReg"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+								<li><a href="" class="animate" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+								<li class="[ hidden-xs ]"><a href="#toggle-search" class="[ animate ]"><span class="[ glyphicon glyphicon-search ]"></span></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="[ bootsnipp-search animate ]">
+						<div class="[ container-fluid ]">
+							<form action="http://bootsnipp.com/search" method="GET" role="search">
+								<div class="[ input-group ]">
+									<input type="text" class="[ form-control ]" name="q" placeholder="Search...">
+									<span class="[ input-group-btn ]">
+										<button class="[ btn btn-danger ]" type="reset"><span class="[ glyphicon glyphicon-remove ]"></span></button>
+									</span>
+								</div>
+							</form>
+						</div>
+					</div>
+				</nav>
+				
+			</div>
+		</header>
+		<main class="col-xs-12">
+			<div class="container-fluid">
+				
+				<div class="row shop-items">
+					<div id="shop-item-1">
+						
+						<!-- shop-item gallery -->
+						<div class="preview col-sm-6">
+							<div class="preview-pic tab-content">
+								<div class="tab-pane active" id="pic-1"><img src="./img/barca1.jpg" /></div>
+								<div class="tab-pane" id="pic-2"><img src="./img/barca7.jpg" /></div>
+								<div class="tab-pane" id="pic-3"><img src="./img/barca3.jpg" /></div>
+								<div class="tab-pane" id="pic-4"><img src="./img/barca1.jpg" /></div>
+								<div class="tab-pane" id="pic-5"><img src="./img/barca2.jpg" /></div>
+							</div>
+							<ul class="preview-thumbnail nav nav-tabs">
+								<li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="./img/barca1.jpg" /></a></li>
+								<li><a data-target="#pic-2" data-toggle="tab"><img src="./img/barca3.jpg" /></a></li>
+								<li><a data-target="#pic-3" data-toggle="tab"><img src="./img/barca7.jpg" /></a></li>
+								<li><a data-target="#pic-4" data-toggle="tab"><img src="./img/barca1.jpg" /></a></li>
+								<li><a data-target="#pic-5" data-toggle="tab"><img src="./img/barca2.jpg" /></a></li>
+							</ul>
+						</div>
+						
+						<!-- ItemDetails -->
+						<div class="details col-sm-6 product-center clearfix">
+							<h2 class="product-title">Барселона  3D Панел за iPhone 7</h2>
+							<hr>
+							<div class="price">
+								<!-- <span class="price-new"><span itemprop="price" id="price-old">ЦЕНА: 28,08 лв.</span></span> -->
+								<h4 class="price">Цена: <span>$180</span></h4>
+							</div>
+							<div class="description">
+								<!-- <span>Марка</span>
+								<a href="#" itemprop="brand">F.C. Barcelona</a>
+								<br> -->
+								<span>Наличност</span> <strong>110</strong>
+							</div>
+
+							<!-- QUANTITY -->
+							<div class="quantity" id="product">
+								<div class="input-group number-spinner">
+									<span class="input-group-btn">
+										<button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+									</span>
+									<input type="text" class="form-control text-center" value="1">
+									<span class="input-group-btn">
+										<button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+									</span>
+								</div>
+							</div>
+
+							<!-- SHOP-ITEM BUTTON -->
+							<div class="shop-item-btn">
+								<input type="hidden" name="product_id" size="2" value="7343">
+								<!-- <input type="button" value="Купи" id="button-cart" rel="7343" data-loading-text="Зареждане..." class="button">
+								<button class="add-to-cart btn btn-default" type="button">add to cart</button> -->
+								<a href="purchase.html" class="add-to-cart btn btn-default" type="button">Купи</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tabbable-panel">
+					<div class="tabbable-line">
+						<ul class="nav nav-tabs ">
+							<li class="active"><a href="#tab_default_1" data-toggle="tab">Описание</a></li>
+							<li><a href="#tab_default_2" data-toggle="tab">Отзиви</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab_default_1">
+								<p>
+									- iPhone 7  панел <br>
+									- 3D дълбочинна технология, която найстина изглежда невероятно на всеки ъгъл <br>
+									- предпазва от удари и надрасквания, тънък дизайн <br>
+									- достъп до всички входове и функции <br>
+									- в официална прозрачна опаковка <br>
+									- официален лицензиран продукт <br>
+								</p>
+							</div>
+							<div class="tab-pane" id="tab_default_2">
+								<div class="row">
+									<div id="tab-review" class="tab-content">
+										<form class="form-vertical" id="form-review">
+										  	<h2 class="col-xs-12">Напишете отзив</h2>
+						  	  				<div class="form-group required col-sm-12">
+												<label class="control-label" for="input-name">Вашето име</label>
+												<input type="text" name="name" value="" id="input-name" class="form-control">
+										  	</div>
+										  	<div class="form-group required col-sm-12">
+												<label class="control-label">Рейтинг</label>
+												<div class="stars starrr" data-rating="0"></div>
+												
+												<!-- Rating -->
+												<!-- <div class="row">
+													<div class="col-md-6">
+											        	<div class="well well-sm">
+											                <div class="text-right">
+											                    <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Leave a Review</a>
+											                </div>
+											            
+											                <div class="row" id="post-review-box" style="display:none;">
+											                    <div class="col-md-12">
+											                        <form accept-charset="UTF-8" action="" method="post">
+											                            <input id="ratings-hidden" name="rating" type="hidden"> 
+											                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+											            
+											                            <div class="text-right">
+											                                <div class="stars starrr" data-rating="0"></div>
+											                                <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+											                                <span class="glyphicon glyphicon-remove"></span>Cancel</a>
+											                                <button class="btn btn-success btn-lg" type="submit">Save</button>
+											                            </div>
+											                        </form>
+											                    </div>
+											                </div>
+											            </div> 
+													</div>
+												</div> -->
+
+								  			</div>
+
+										  	<div class="form-group required col-sm-12">
+												<label class="control-label" for="input-review">Вашият отзив</label>
+												<textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
+										  	</div>
+										  	<!-- Btn -> Modal for Review#1 -->
+											<!-- <div class="buttons clearfix">
+												<button type="button" class="btn btn-primary" id="button-review" data-toggle="modal" data-target="#myModalSuccessfulAlert"  data-loading-text="Зареждане...">Продължи</button>
+											</div> -->
+
+											<!-- Review BTN Alert -->
+											<div class="row page-alerts col-md-12">
+											    <div class="col-md-2">
+										        	<!-- <button data-toggle="page-alert" data-toggle-id="1" class="btn btn-success btn-block">Show success</button> -->
+										        	<button type="button" class="btn btn-block btn-primary" id="button-review" data-toggle="page-alert" data-toggle-id="1"  data-loading-text="Зареждане...">Продължи</button>
+									        	</div>
+									        	<div class="col-md-2">
+								        			<button data-toggle="page-alert" data-delay="3000" data-toggle-id="5" class="btn btn-info btn-block">Auto closing alert</button>
+								        		</div>
+											</div>
+										</form>
+								  	</div>
+									<!-- Review Alert -->
+									<div class="container-fluid page-alerts">
+										<div class="alert alert-success page-alert" id="alert-1">
+											<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+											<strong>Well done!</strong> You successfully read this important alert message.
+										</div>
+										<div class="alert alert-success page-alert" id="alert-5">
+											<button type="button" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+											<strong>Cool!</strong> This alert will close in 3 seconds. The data-delay attribute is in milliseconds.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal for Login -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog modal-content">
+					<!-- Modal content -->
+					<div id="signin" class="panel panel-default modal-body panel-heading col-xs-8 col-xs-offset-2">
+						<strong>Sign in to continue</strong>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="panel-body">
+							<form role="form" action="#" method="POST">
+								<fieldset>
+									<div class="row">
+										<div class="center-block">
+											<img class="profile-img"
+												src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-12 col-md-10  col-md-offset-1 ">
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="glyphicon glyphicon-user"></i>
+													</span>
+													<input class="form-control" placeholder="Username" name="loginname" type="text" autofocus>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="glyphicon glyphicon-lock"></i>
+													</span>
+													<input class="form-control" placeholder="Password" name="password" type="password" value="">
+												</div>
+											</div>
+											<div class="form-group">
+												<input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+						<div class="panel-footer">
+							Don't have an account! <a href="" data-toggle="modal" data-target="#myModalReg" onClick=""> Sign Up Here </a>
+							<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal for Registration -->
+			<div class="modal fade" id="myModalReg" role="dialog">
+				<div class="modal-dialog modal-content">
+					<!-- Modal content-->
+					<div id="signin" class="panel panel-default modal-body panel-heading col-xs-8 col-xs-offset-2 col-md-10 col-md-offset-1">
+						<strong>Registration Form</strong>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<div class="panel-body">
+							<form role="form" action="#" method="POST">
+								<fieldset>
+									<div class="row">
+										<!-- <div class="validateForm col-sm-12 col-md-10 col-md-offset-1">
+											<div class="form-group">
+												<label class="control-label">First Name</label>
+												<input type="text" class="form-control firstName" id="firstName" autofocus/>
+											</div>
+											<div class="form-group">
+												<label class="control-label">Last Name</label>
+												<input type="text" class="form-control lastName" id="lastName" />
+											</div>
+											<div class="form-group">
+												<label class="control-label">Username</label>
+												<input type="text" class="form-control username" id="username" />
+											</div>
+											<div class="form-group">
+												<label class="control-label">Password</label>
+												<input type="password" class="form-control password" id="password" />
+											</div>
+											<div class="form-group">
+												<label class="control-label">Confirm Password</label>
+												<input type="password" class="form-control cpassword" id="cpassword" />
+											</div>
+											<div class="form-group">
+												<input type="submit" class="btn btn-lg btn-primary btn-block col-sm-6" value="Register">
+												<input type="reset" class="btn btn-lg btn-primary btn-block col-sm-6" value="Clear form">
+											</div>
+										</div> -->
+										<div class="validateForm col-sm-12 col-md-10 col-md-offset-1">
+											<!-- <div class="form-group">
+												<label class="control-label">Your Name</label>
+												<input type="text" class="form-control name" id="name" autofocus/>
+											</div>
+											<div class="form-group">
+												<label class="control-label">Your Email</label>
+												<input type="text" class="form-control email" id="email" />
+											</div>
+											<div class="form-group">
+												<label class="control-label">Username</label>
+												<input type="text" class="form-control username" id="username" />
+											</div>
+											<div class="form-group">
+												<label class="control-label">Password</label>
+												<input type="password" class="form-control password" id="password" />
+											</div>
+											<div class="form-group">
+												<label class="control-label">Confirm Password</label>
+												<input type="password" class="form-control cpassword" id="cpassword" />
+											</div> 
+											<div class="form-group">
+												<label for="name" class="control-label">Your Name</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+														<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+													</div>
+												</div>
+											</div> -->
+											<div class="form-group">
+												<label for="name" class="control-label">Username</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+														<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="name" class="control-label">Your Email</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i></span>
+														<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="name" class="control-label">Password</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
+														<input type="text" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="name" class="control-label">Confirm Password</label>
+												<div class="cols-sm-10">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
+														<input type="text" class="form-control" name="cpassword" id="cpassword"  placeholder="Confirm your Password"/>
+													</div>
+												</div>
+											</div>
+											<div class="form-group col-sm-12">
+												<input type="submit" id="buttonreg" class="btn btn-lg btn-primary col-sm-5 col-sm-offset-1" value="Register">
+												<input type="reset" class="btn btn-lg btn-primary col-sm-5" value="Clear form">
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Modal for Review#1 -->
+			<!-- <div id="myModalSuccessfulAlert" class="modal fade" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">×</button>
+							<h4 class="modal-title">Successfully!!!</h4>
+						</div>
+						<div class="modal-body alert alert-success">
+							<i class="fa fa-check-circle"></i> Благодарим Ви за изпратения отзив. Наш служител ще го прегледа възможно най-скоро.
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</main>
+		<div class="clearfix"></div>
+		<footer>
+			<img src="./img/fu.png" width="130" height="40">
+			&nbsp;
+			<a href="https://www.facebook.com/fcbarcelona/?fref=ts" id="headerLogonew" class="headerLogonew">
+				<img src="./img/facebook/fb3white.png" width="40" height="40">
+			</a>
+			<a href="https://www.instagram.com/fcbarcelona/" id="headerLogonew" class="headerLogonew">
+				<img src="./img/instagram/inst1.png" width="40" height="40">
+			</a>
+			<a href="https://twitter.com/fcbarcelona" id="headerLogonew" class="headerLogonew">
+				<img src="./img/twitter/tw.png" width="40" height="40">
+			</a>
+			<a href="https://plus.google.com/116151548242653888082/posts" id="headerLogonew" class="headerLogonew">
+				<img src="./img/google_plus/gp3.png" width="40" height="40">
+			</a>
+			<a href="https://www.youtube.com/fcbarcelona" id="headerLogonew" class="headerLogonew">
+				<img src="./img/youtube/yt4.png" width="40" height="40">
+			</a>
+			<a href="#" class="button-to-top">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+		</footer>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Number Spinner -->
+	<script>
+		$(document).on('click', '.number-spinner button', function () {    
+			var btn = $(this),
+				oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+				newVal = 0;
+			
+			if (btn.attr('data-dir') == 'up') {
+				newVal = parseInt(oldValue) + 1;
+			} else {
+				if (oldValue > 1) {
+					newVal = parseInt(oldValue) - 1;
+				} else {
+					newVal = 1;
+				}
+			}
+			btn.closest('.number-spinner').find('input').val(newVal);
+		});
+	</script>
+
+	<!-- Rating -->
+	<script>
+		(function(e){var t,o={className:"autosizejs",append:"",callback:!1,resizeDelay:10},i='<textarea tabindex="-1" style="position:absolute; top:-999px; left:0; right:auto; bottom:auto; border:0; padding: 0; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box; word-wrap:break-word; height:0 !important; min-height:0 !important; overflow:hidden; transition:none; -webkit-transition:none; -moz-transition:none;"/>',n=["fontFamily","fontSize","fontWeight","fontStyle","letterSpacing","textTransform","wordSpacing","textIndent"],s=e(i).data("autosize",!0)[0];s.style.lineHeight="99px","99px"===e(s).css("lineHeight")&&n.push("lineHeight"),s.style.lineHeight="",e.fn.autosize=function(i){return this.length?(i=e.extend({},o,i||{}),s.parentNode!==document.body&&e(document.body).append(s),this.each(function(){function o(){var t,o;"getComputedStyle"in window?(t=window.getComputedStyle(u,null),o=u.getBoundingClientRect().width,e.each(["paddingLeft","paddingRight","borderLeftWidth","borderRightWidth"],function(e,i){o-=parseInt(t[i],10)}),s.style.width=o+"px"):s.style.width=Math.max(p.width(),0)+"px"}function a(){var a={};if(t=u,s.className=i.className,d=parseInt(p.css("maxHeight"),10),e.each(n,function(e,t){a[t]=p.css(t)}),e(s).css(a),o(),window.chrome){var r=u.style.width;u.style.width="0px",u.offsetWidth,u.style.width=r}}function r(){var e,n;t!==u?a():o(),s.value=u.value+i.append,s.style.overflowY=u.style.overflowY,n=parseInt(u.style.height,10),s.scrollTop=0,s.scrollTop=9e4,e=s.scrollTop,d&&e>d?(u.style.overflowY="scroll",e=d):(u.style.overflowY="hidden",c>e&&(e=c)),e+=w,n!==e&&(u.style.height=e+"px",f&&i.callback.call(u,u))}function l(){clearTimeout(h),h=setTimeout(function(){var e=p.width();e!==g&&(g=e,r())},parseInt(i.resizeDelay,10))}var d,c,h,u=this,p=e(u),w=0,f=e.isFunction(i.callback),z={height:u.style.height,overflow:u.style.overflow,overflowY:u.style.overflowY,wordWrap:u.style.wordWrap,resize:u.style.resize},g=p.width();p.data("autosize")||(p.data("autosize",!0),("border-box"===p.css("box-sizing")||"border-box"===p.css("-moz-box-sizing")||"border-box"===p.css("-webkit-box-sizing"))&&(w=p.outerHeight()-p.height()),c=Math.max(parseInt(p.css("minHeight"),10)-w||0,p.height()),p.css({overflow:"hidden",overflowY:"hidden",wordWrap:"break-word",resize:"none"===p.css("resize")||"vertical"===p.css("resize")?"none":"horizontal"}),"onpropertychange"in u?"oninput"in u?p.on("input.autosize keyup.autosize",r):p.on("propertychange.autosize",function(){"value"===event.propertyName&&r()}):p.on("input.autosize",r),i.resizeDelay!==!1&&e(window).on("resize.autosize",l),p.on("autosize.resize",r),p.on("autosize.resizeIncludeStyle",function(){t=null,r()}),p.on("autosize.destroy",function(){t=null,clearTimeout(h),e(window).off("resize",l),p.off("autosize").off(".autosize").css(z).removeData("autosize")}),r())})):this}})(window.jQuery||window.$);
+
+		var __slice=[].slice;(function(e,t){var n;n=function(){function t(t,n){var r,i,s,o=this;this.options=e.extend({},this.defaults,n);this.$el=t;s=this.defaults;for(r in s){i=s[r];if(this.$el.data(r)!=null){this.options[r]=this.$el.data(r)}}this.createStars();this.syncRating();this.$el.on("mouseover.starrr","span",function(e){return o.syncRating(o.$el.find("span").index(e.currentTarget)+1)});this.$el.on("mouseout.starrr",function(){return o.syncRating()});this.$el.on("click.starrr","span",function(e){return o.setRating(o.$el.find("span").index(e.currentTarget)+1)});this.$el.on("starrr:change",this.options.change)}t.prototype.defaults={rating:void 0,numStars:5,change:function(e,t){}};t.prototype.createStars=function(){var e,t,n;n=[];for(e=1,t=this.options.numStars;1<=t?e<=t:e>=t;1<=t?e++:e--){n.push(this.$el.append("<span class='glyphicon .glyphicon-star-empty'></span>"))}return n};t.prototype.setRating=function(e){if(this.options.rating===e){e=void 0}this.options.rating=e;this.syncRating();return this.$el.trigger("starrr:change",e)};t.prototype.syncRating=function(e){var t,n,r,i;e||(e=this.options.rating);if(e){for(t=n=0,i=e-1;0<=i?n<=i:n>=i;t=0<=i?++n:--n){this.$el.find("span").eq(t).removeClass("glyphicon-star-empty").addClass("glyphicon-star")}}if(e&&e<5){for(t=r=e;e<=4?r<=4:r>=4;t=e<=4?++r:--r){this.$el.find("span").eq(t).removeClass("glyphicon-star").addClass("glyphicon-star-empty")}}if(!e){return this.$el.find("span").removeClass("glyphicon-star").addClass("glyphicon-star-empty")}};return t}();return e.fn.extend({starrr:function(){var t,r;r=arguments[0],t=2<=arguments.length?__slice.call(arguments,1):[];return this.each(function(){var i;i=e(this).data("star-rating");if(!i){e(this).data("star-rating",i=new n(e(this),r))}if(typeof r==="string"){return i[r].apply(i,t)}})}})})(window.jQuery,window);$(function(){return $(".starrr").starrr()})
+
+		$(function(){
+
+		  $('#new-review').autosize({append: "\n"});
+
+		  var reviewBox = $('#post-review-box');
+		  var newReview = $('#new-review');
+		  var openReviewBtn = $('#open-review-box');
+		  var closeReviewBtn = $('#close-review-box');
+		  var ratingsField = $('#ratings-hidden');
+
+		  openReviewBtn.click(function(e)
+		  {
+		    reviewBox.slideDown(400, function()
+		      {
+		        $('#new-review').trigger('autosize.resize');
+		        newReview.focus();
+		      });
+		    openReviewBtn.fadeOut(100);
+		    closeReviewBtn.show();
+		  });
+
+		  closeReviewBtn.click(function(e)
+		  {
+		    e.preventDefault();
+		    reviewBox.slideUp(300, function()
+		      {
+		        newReview.focus();
+		        openReviewBtn.fadeIn(200);
+		      });
+		    closeReviewBtn.hide();
+		    
+		  });
+
+		  $('.starrr').on('starrr:change', function(e, value){
+		    ratingsField.val(value);
+		  });
+		});
+	</script>
+
+	<!-- Shop Item Review Button -->
+	<script>
+		$(function() {
+		    $('.page-alert').hide();
+		    //Show alert
+		    $('button[data-toggle="page-alert"]').click(function(e) {
+		        e.preventDefault();
+		        var id = $(this).attr('data-toggle-id');
+		        var alert = $('#alert-' + id);
+		        var timeOut;
+		        alert.appendTo('.page-alerts');
+		        alert.slideDown();
+
+		        //Is autoclosing alert
+		        var delay = $(this).attr('data-delay');
+		        if(delay != undefined)
+		        {
+		            delay = parseInt(delay);
+		            clearTimeout(timeOut);
+		            timeOut = window.setTimeout(function() {
+		                    alert.slideUp();
+		                }, delay);
+		        }
+		    });
+		    
+		    //Close alert
+		    $('.page-alert .close').click(function(e) {
+		        e.preventDefault();
+		        $(this).closest('.page-alert').slideUp();
+		    });
+		});
+	</script>
+
+	<!-- navbar with search3 -->
+	<!-- <script>
+	    $(function () {
+			function closeSearch() {
+			    var $form = $('.navbar-collapse form[role="search"].active')
+				$form.find('input').val('');
+				$form.removeClass('active');
+			}
+
+			// Show Search if form is not active // event.preventDefault() is important, this prevents the form from submitting
+			$(document).on('click', '.navbar-collapse form[role="search"]:not(.active) button[type="submit"]', function(event) {
+				event.preventDefault();
+				var $form = $(this).closest('form'),
+					$input = $form.find('input');
+				$form.addClass('active');
+				$input.focus();
+			});
+			// ONLY FOR DEMO // Please use $('form').submit(function(event)) to track from submission
+			// if your form is ajax remember to call `closeSearch()` to close the search container
+			$(document).on('click', '.navbar-collapse form[role="search"].active button[type="submit"]', function(event) {
+				event.preventDefault();
+				var $form = $(this).closest('form'),
+					$input = $form.find('input');
+				$('#showSearchTerm').text($input.val());
+			    closeSearch()
+			});
+    	});
+	</script> -->
+
+	<!-- navbar with search4 -->
+	<script type="text/javascript">
+		$(function() { 
+
+		    $('a[href="#toggle-search"], .navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn[type="reset"]').on('click', function(event) {
+				event.preventDefault();
+				$('.navbar-bootsnipp .bootsnipp-search .input-group > input').val('');
+				$('.navbar-bootsnipp .bootsnipp-search').toggleClass('open');
+				$('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+				if ($('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+					/* I think .focus dosen't like css animations, set timeout to make sure input gets focus */
+					setTimeout(function() { 
+						$('.navbar-bootsnipp .bootsnipp-search .form-control').focus();
+					}, 100);
+				}			
+			});
+
+			$(document).on('keyup', function(event) {
+				if (event.which == 27 && $('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+					$('a[href="#toggle-search"]').trigger('click');
+				}
+			});
+		    
+		});
+	</script>
+</body>
+</html>

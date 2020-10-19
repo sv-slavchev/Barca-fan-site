@@ -1,0 +1,1 @@
+CREATE TABLE `barca_db`.`users` ( `id` INT NOT NULL AUTO_INCREMENT , `username` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , `password` VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , `email` VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB CHARACTER SET utf8 COLLATE utf8_general_ci;

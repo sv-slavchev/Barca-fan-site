@@ -1,0 +1,15 @@
+
+
+
+<form method="post" action="payment.php">
+<b> <center>Payment </b><br/>
+Your name: &nbsp <input type="text" name="name" /><br/>
+Your email: &nbsp <input type="text" name="email" /><br/>
+Your phone: &nbsp <input type="text" name="phone" /><br/>
+Your address: &nbsp <input type="text" name="address" /><br/>
+Total Price : <?php echo $_SESSION['total']; ?> </br>
+<input type="submit" name="send" value="Send Order" /><br/>
+
+</center>
+
+</form>
